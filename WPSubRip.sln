@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WPSubRip", "WPSubRip\WPSubRip.vbproj", "{8B1A4183-78E6-44D6-BE25-9AADB7A20FD0}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://winupsoftware.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WPSubRip\\WPSubRip.vbproj
+		SccProjectName1 = WPSubRip
+		SccLocalPath1 = WPSubRip
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B1A4183-78E6-44D6-BE25-9AADB7A20FD0}.Debug|x86.ActiveCfg = Debug|x86
+		{8B1A4183-78E6-44D6-BE25-9AADB7A20FD0}.Debug|x86.Build.0 = Debug|x86
+		{8B1A4183-78E6-44D6-BE25-9AADB7A20FD0}.Release|x86.ActiveCfg = Release|x86
+		{8B1A4183-78E6-44D6-BE25-9AADB7A20FD0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

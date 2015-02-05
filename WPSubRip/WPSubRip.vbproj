@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B1A4183-78E6-44D6-BE25-9AADB7A20FD0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WPSubRip.My.MyApplication</StartupObject>
+    <RootNamespace>WPSubRip</RootNamespace>
+    <AssemblyName>WPSubRip</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WPSubRip.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WPSubRip.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>WPSubRip.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DDShowPlayer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\代码库\DirectShowPlayer\bin\DDShowPlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.0.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=12.0.0.1, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.TreeGX, Version=12.0.0.1, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="WPSubRip.AppCore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCore.DataPool.vb" />
+    <Compile Include="AppCore.SubRip.vb" />
+    <Compile Include="AppCore.TimeProcessor.vb" />
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Chform_AboutBox.Designer.vb">
+      <DependentUpon>Chform_AboutBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chform_AboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chform_Edit.Designer.vb">
+      <DependentUpon>Chform_Edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chform_Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chform_Information.Designer.vb">
+      <DependentUpon>Chform_Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chform_Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chform_Settings.Designer.vb">
+      <DependentUpon>Chform_Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chform_Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chform_TimeSetting.Designer.vb">
+      <DependentUpon>Chform_TimeSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chform_TimeSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMedia.Designer.vb">
+      <DependentUpon>FormMedia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMedia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimeLine.Designer.vb">
+      <DependentUpon>FormTimeLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimeLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppCore.vb" />
+    <Compile Include="Chform_Import.Designer.vb">
+      <DependentUpon>Chform_Import.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Chform_Import.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chform_AboutBox.resx">
+      <DependentUpon>Chform_AboutBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chform_Edit.resx">
+      <DependentUpon>Chform_Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chform_Information.resx">
+      <DependentUpon>Chform_Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chform_Settings.resx">
+      <DependentUpon>Chform_Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chform_TimeSetting.resx">
+      <DependentUpon>Chform_TimeSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMedia.resx">
+      <DependentUpon>FormMedia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeLine.resx">
+      <DependentUpon>FormTimeLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chform_Import.resx">
+      <DependentUpon>Chform_Import.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Editor1.ico" />
+    <Content Include="WPSubRip.ico" />
+    <Content Include="更新日志.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
